@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+    <h1>Add Employee data</h1>
+<form action="/update/{{employee.sno}}" method="POST"></form>    
+      <div class="mb-3">
+  <label for="" class="form-label">Full Name</label>
+  <input type="text" class="form-control"  name ="name" id="" placeholder="Enter Full Name">
+</div>
+<div class="mb-3">
+  <label for="" class="form-label">Email</label>
+  <input type="email" class="form-control"  name ="email" id=""
+   placeholder="Enter Correct mail address">
+</div>
+  </div>
+<div class="mb-3">
+      <button type="submit" class="btn btn-primary">SUBMIT</button>
+  </div>  
+{% endblock body %}
